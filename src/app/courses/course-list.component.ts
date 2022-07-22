@@ -1,4 +1,4 @@
-import {Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Course} from './course';
 
 @Component({
@@ -13,7 +13,7 @@ export class CourseListComponent implements OnInit {
             {
                 id: 1,
                 name: 'Curso 1',
-                imageUrl: '',
+                imageUrl: '/assets/images/emoji-core.jpg',
                 price: 10.0,
                 code: 'DEF-456',
                 duration: 3,
@@ -23,7 +23,7 @@ export class CourseListComponent implements OnInit {
             {
                 id: 2,
                 name: 'Curso 2',
-                imageUrl: '',
+                imageUrl: '/assets/images/emoji-sor.jpg',
                 price: 10.0,
                 code: 'ABC-123',
                 duration: 2,
