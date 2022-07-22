@@ -1,10 +1,10 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CourseListComponent } from './courses/course-list.component';
 import { StarComponent } from './star/star.component';
+import { FontAwesomeModule }  from  '@fortawesome/angular-fontawesome' ; 
 import { webSocket } from "rxjs/webSocket";
-
 
 
 import { AppComponent } from './app.component';
@@ -17,7 +17,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
