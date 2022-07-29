@@ -5,7 +5,7 @@ import { CourseListComponent } from './courses/course-list.component';
 import { StarComponent } from './star/star.component';
 import { FontAwesomeModule }  from  '@fortawesome/angular-fontawesome' ; 
 import { webSocket } from "rxjs/webSocket";
-
+import { ReplacePipe } from './pipe/replace.pipe';
 
 import { AppComponent } from './app.component';
 
@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     CourseListComponent, 
-    StarComponent
+    StarComponent,
+    ReplacePipe
   ],
   imports: [
     BrowserModule,
