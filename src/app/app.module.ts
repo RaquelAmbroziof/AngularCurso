@@ -9,7 +9,9 @@ import { ReplacePipe } from './pipe/replace.pipe';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
-import { Error404Component } from './error-404/error-404-component';
+import { Error404Component } from './error-404/error-404.component';
+import { CouseInfoComponent } from './courses/course-info.component';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { Error404Component } from './error-404/error-404-component';
     ReplacePipe,
     NavBarComponent,
     Error404Component,
+    CouseInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -27,11 +30,15 @@ import { Error404Component } from './error-404/error-404-component';
     FontAwesomeModule,
     RouterModule.forRoot([ // forRoot espera um array de objetos do tipo rota
       {
-        path: '', redirectTo: 'courses', pathMatch: 'full' // rota raiz
+        path: 'courses/info/:id', component: CouseInfoComponent // o :id é o path variable um paramentro da url
       },
       {
         path: 'courses', component: CourseListComponent
       },
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full' // rota raiz
+      },
+
       {
         path: '**', component: Error404Component // ** rota desconhecida/nao encontrada/nao definida
       },
