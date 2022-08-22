@@ -4,8 +4,8 @@ import { CourseService } from './course.service';
 
 
 @Component({
-    selector: 'app-course-list',
-    templateUrl: './course-list.component.html'
+    //selector: 'app-course-list', nao precisa mais pq tá sendo chamado apartir de rotas
+    templateUrl: './course-list.component.html',
 })
 export class CourseListComponent implements OnInit {
     filteredCourses: Course[] = [];
