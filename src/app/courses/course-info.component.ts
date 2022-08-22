@@ -12,7 +12,7 @@ export class CouseInfoComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.courserId = +this.activatedRoute.snapshot.paramMap.get('id');
+    this.courserId = +this.activatedRoute.snapshot.paramMap.get('id'); // esse + é pra converter a string para number
   }
 
 }
